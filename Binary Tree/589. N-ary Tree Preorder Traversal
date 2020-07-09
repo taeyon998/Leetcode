@@ -1,5 +1,5 @@
 /*
-  Important 1: Don't return unless not needed
+  //IMPORTANT 1: DON'T RETURN in a void function (except for base case)
 */
 
 class Solution {

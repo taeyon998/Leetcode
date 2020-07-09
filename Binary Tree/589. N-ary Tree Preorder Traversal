@@ -1,5 +1,6 @@
 /*
   //IMPORTANT 1: DON'T RETURN in a void function (except for base case)
+  //IMPORTANT 2: add CURRENT element BEFORE LOOP, or else it won't loop when children.size()=0 and thus not add this element to vector
 */
 
 class Solution {
@@ -16,9 +17,10 @@ public:
         if(element==nullptr){
             return;
         }
+        
+        //IMPORTANT 2: Add vector BEFORE loop! (case when last element doesn't have child. We gotta still add this element before terminating)
         preorder.push_back(element->val);
         for(int i=0;i<element->children.size();i++){
-              //preorder.push_back(element->children[i]->val);
               
             //IMPORTANT 1: NO return!
             recursive(element->children[i],preorder);

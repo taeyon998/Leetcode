@@ -1,4 +1,9 @@
 /*
+      1
+    2   3
+   4 5 
+  Organize top as [1,2,3,4,5]
+  
   //IMPORTANT 1: DON'T RETURN in a void function (except for base case)
   //IMPORTANT 2: add CURRENT element BEFORE LOOP, or else it won't loop when children.size()=0 and thus not add this element to vector
 */
